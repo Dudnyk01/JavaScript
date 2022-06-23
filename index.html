@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с DOM и UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img class="logo__img" src="./img/logo.svg" alt="WAYUP">
+            </a>
+            <h1 class="header-title">
+                Тренировка Javascript
+            </h1>
+        </div>
+    </header>
+    <section id="tabs" class="tabs">
+        <div class="container">
+            <h2 class="tabs-title general-title">
+                1. Табы
+            </h2>
+            <div id="wrapper-button" class="wrapper-button">
+                <button class="button" type="button" data-btn="1">
+                    Жираф
+                </button>
+                <button class="button" type="button" data-btn="2">
+                    Олень
+                </button>
+                <button class="button button_active" type="button" data-btn="3">
+                    Козочка
+                </button>
+                <button class="button" type="button" data-btn="4">
+                    Бурундук
+                </button>
+            </div>
+            <div id="wrapper-content" class="wrapper-content">
+                <div class="wrapper-offer" data-content="1">
+                    <h3 class="wrapper-offer__title">
+                        Жираф
+                    </h3>
+                    <p class="wrapper-offer__text">
+                        Самцы жирафа достигают высоты до 5,5—6,1 м (около 1/3 длины составляет шея) и весят до 900—1200 кг. Самки, как правило, немного меньше и легче.
+                    </p>
+                    <p class="wrapper-offer__text">
+                        Рисунок на шерсти состоит из тёмных пятен, выделяющихся на фоне более светлой базовой окраски, и у каждого жирафа индивидуален, как у человека отпечатки пальцев. Нижняя часть тела у жирафа более светлая и без пятен.
+                    </p>
+                </div>
+                <div class="wrapper-offer" data-content="2">
+                    <h3 class="wrapper-offer__title">
+                        Олень
+                    </h3>
+                    <p class="wrapper-offer__text">
+                        Первые олени появились в олигоцене в Азии. Из неё они распространились в Европу и в миоцене по существовавшему тогда естественному мосту в Северную Америку. В Южную Америку олени добрались лишь в геохронологически недавнем плейстоцене.
+                    </p>
+                    <p class="wrapper-offer__text">
+                        Олени имеют богатое символическое значение и являются в мифах различных культур и народов[2]. Часто олицетворяют благородство, величие, красоту, грацию, быстроту. В христианской культуре символизируют отшельничество, благочестие и чистоту (в частности, образ «оленя душевного» использован в «Лествице»
+                    </p>
+                </div>
+                <div class="wrapper-offer wrapper-offer_active" data-content="3">
+                    <h3 class="wrapper-offer__title">
+                        Козочка
+                    </h3>
+                    <p class="wrapper-offer__text">
+                        Домашняя коза (лат. Capra hircus) — домашнее животное, вид парнокопытных из рода горные козлы (Capra) семейства полорогих.
+                    </p>
+                    <p class="wrapper-offer__text">
+                        Коза — одно из первых прирученных животных. Одомашнена на Ближнем Востоке, приблизительно 9 тыс. лет назад. Предком домашней козы был дикий безоаровый козёл (Capra hircus aegagrus), до сегодняшнего дня встречающийся от греческих островов в Эгейском море через Малую Азию, Армянское нагорье и Переднюю Азию до Средней Азии.
+                    </p>
+                </div>
+                <div class="wrapper-offer" data-content="4">
+                    <h3 class="wrapper-offer__title">
+                        Бурундук
+                    </h3>
+                    <p class="wrapper-offer__text">
+                        Бурундук, как и белка, — древесный житель. Ему не обязательно нужны высокие старые деревья, иногда он довольствуется зарослями черемухи, березняка или ивы. На открытых местах и в чистом высокоствольном лесу без подлеска из молодой поросли и кустарников он не живёт. Предпочитает места, заваленные буреломом и валежником по берегам речек и ручьёв.
+                    </p>
+                    <p class="wrapper-offer__text">
+                        На зиму бурундуки впадают в спячку. Они просыпаются среди зимы, подкрепляются немного, а затем снова засыпают.
+
+Весной выходят из нор в разное время, смотря по тому, какая стоит погода. Те, у которых норы устроены на солнечном склоне и раньше освобождаются из-под снега, появляются раньше других. Если после тёплой погоды вновь холодает, бурундуки вновь уходят в норки и ждут потепления. Если в кладовых ещё сохранились запасы, то они поедают их.
+
+В жаркие летние дни бурундуки выходят из норок очень рано, ещё до восхода солнца, и ищут корм до наступления сильной жары. Под вечер, когда жар спадёт, они выходят снова и остаются на поверхности уже до заката солнца. В густом тенистом лесу, где особенной жары не бывает, зверьки не прячутся целый день. В дождливую погоду пережидают в норах.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="window" class="window">
+        <div class="container">
+            <h2 class="general-title">
+                2. Модальное окно
+            </h2>
+            <button type="button" id="button-open" class="button-open">
+                Вызвать дождь
+            </button>
+            <div id="wrapper-modal" class="wrapper-modal">
+                <div id="overlay" class="overlay"></div>
+                <div id="modal-window" class="modal-window">
+                    <div class="modal-window__contant">
+                        <h3 class="modal-window__title">
+                            Немного о дожде
+                        </h3>
+                        <p class="modal-window__text">
+                            До́ждь — атмосферные осадки, выпадающие из облаков в виде капель жидкости со средним диаметром от 0,5 до 6—7 мм[1].
+                        </p>
+                        <p class="modal-window__text">
+                            Осенние дожди. Южная Эстония
+                        </p>
+                        <p class="modal-window__text">
+                            Летний дождь в Санкт-Петербурге
+                            Жидкие осадки с меньшим диаметром капель называются моросью[2]. Капли с диаметром больше 6—7 мм разбиваются в процессе падения из облаков на меньшие капли, поэтому даже при сильнейшем ливне диаметр капель не превышает 6—7 мм. Интенсивность дождя обычно составляет от 0,25 мм/ч (моросящий дождь) до 100 мм/ч (ливень)[1]. В Европе самый сильный ливень с интенсивностью 15,5 мм/мин был зафиксирован в 1920 году в Германии[2].
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <div>
+    </section>
+    <section id="slid" class="slid">
+        <div class="container">
+            <h2 class="slid-title general-title">
+                3. Слайдер
+            </h2>
+             <div class="wrapper-slider">
+                 <div class="wrapper-box">
+                    <div class="wrapper-box__slider wrapper-box__slider_active">
+                        <p class="wrapper-box__text">
+                            Это слайд 1 с текстом
+                        </p>
+                    </div>
+                    <div class="wrapper-box__slider">
+                        <p class="wrapper-box__text">
+                            Это слайд 2 с текстом
+                        </p>
+                    </div>
+                    <div class="wrapper-box__slider">
+                        <p class="wrapper-box__text">
+                            Это слайд 3 с текстом
+                        </p>
+                    </div>
+                    <div class="wrapper-btn">
+                        <button type="button" id="btn-prev" class="btn-prev">
+                            <img src="./img/btn-left.svg" alt="">
+                        </button>
+                        <button type="button" id="btn-next" class="btn-next">
+                            <img src="./img/btn-right.svg" alt="">
+                        </button>
+                     </div>
+                     <div class="dots-wrapper">
+                        <span class="dots-wrapper__tab dots-wrapper__tab_active"></span>
+                        <span class="dots-wrapper__tab"></span>
+                        <span class="dots-wrapper__tab"></span>
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
